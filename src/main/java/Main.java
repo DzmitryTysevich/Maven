@@ -1,3 +1,4 @@
+import org.apache.log4j.Logger;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -5,6 +6,8 @@ import java.util.Arrays;
 import java.util.Properties;
 
 public class Main {
+    static final Logger LOGGER = Logger.getLogger(Main.class);
+
     public static void main(String[] args) {
         Properties properties = new Properties();
         try {
@@ -18,16 +21,16 @@ public class Main {
 
         String file1 = properties.getProperty("file1");
         if (oldFile1.canRead() && file1.equals(oldFile1.getAbsolutePath())) {
-            System.out.println(file1 + " - " + true);
+            LOGGER.info(file1 + " - " + true);
         } else {
-            System.out.println(file1 + " - " + false);
+            LOGGER.info(file1 + " - " + false);
         }
 
         String file2 = properties.getProperty("file2");
         if (oldFile2.canRead() && file2.equals(oldFile2.getAbsolutePath())) {
-            System.out.println(file2 + " - " + true);
+            LOGGER.info(file2 + " - " + true);
         } else {
-            System.out.println(file2 + " - " + false);
+            LOGGER.info(file2 + " - " + false);
         }
 
         String suffix = properties.getProperty("suffix");
@@ -37,6 +40,6 @@ public class Main {
         oldFile2.renameTo(new File(path + suffix + "_file2.json"));
 
         File resources = new File("/home/dzmitry/IdeaProjects/Maven/src/main/resources");
-        System.out.println(Arrays.toString(resources.list()));
+        LOGGER.info(Arrays.toString(resources.list()));
     }
 }
