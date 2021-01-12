@@ -3,12 +3,12 @@ package com.test.maven;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.File;
+import java.io.*;
 import java.util.Arrays;
 import java.util.Properties;
 
 public class Main {
-    private static final Logger LOGGER = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger("com.test.maven");
 
     public static void main(String[] args) {
         LOGGER.trace("Start trace");
@@ -16,7 +16,7 @@ public class Main {
         Properties properties = new Properties();
         LOGGER.info("Properties have been gotten");
         try {
-            properties.load(Main.class.getResourceAsStream("/config.properties"));
+            properties.loadFromXML(Main.class.getResourceAsStream("/config.xml"));
             LOGGER.info("File config.properties have been read");
         } catch (Exception e) {
             LOGGER.error("Exception happen!", e);
