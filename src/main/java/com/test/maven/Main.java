@@ -1,24 +1,25 @@
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+package com.test.maven;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.Properties;
 
 public class Main {
-    private static final Logger LOGGER = Logger.getLogger(Main.class);
+    private static final Logger LOGGER = LogManager.getLogger();
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
+        LOGGER.trace("Start trace");
         LOGGER.info("Entering application.");
         Properties properties = new Properties();
         LOGGER.info("Properties have been gotten");
         try {
-            properties.load(Main.class.getResourceAsStream("config.propertie"));
+            properties.load(Main.class.getResourceAsStream("/config.properties"));
             LOGGER.info("File config.properties have been read");
         } catch (Exception e) {
-            LOGGER.log(Level.ERROR, "Exception happen!", e);
-            throw e;
+            LOGGER.error("Exception happen!", e);
         }
 
         File oldFile1 = new File("/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file1.json");
@@ -53,5 +54,6 @@ public class Main {
         File files = new File("/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs");
         LOGGER.info(Arrays.toString(files.list()));
         LOGGER.info("Application closed.");
+        LOGGER.trace("End trace");
     }
 }
