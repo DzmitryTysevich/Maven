@@ -8,12 +8,14 @@ import java.util.Properties;
 public class Main {
     static final Logger LOGGER = Logger.getLogger(Main.class);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
         Properties properties = new Properties();
         try {
             properties.load(new FileReader("src/main/resources/config.properties"));
         } catch (IOException e) {
-            e.printStackTrace();
+            LOGGER.error("No file *.properties for reading!");
+            throw e;
         }
 
         File oldFile1 = new File("src/main/resources/old_file1.json");
