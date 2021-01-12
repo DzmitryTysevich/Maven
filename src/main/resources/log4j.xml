@@ -1,18 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
-<log4j:configuration debug="true"
-                     xmlns:log4j='http://jakarta.apache.org/log4j/'>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="true">
 
-    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+    <appender name="A1" class="org.apache.log4j.FileAppender">
+        <param name="File" value="/home/dzmitry/IdeaProjects/Maven/src/main/resources/A1.log"/>
+        <param name="Append" value="true"/>
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern"
-                   value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
         </layout>
     </appender>
 
-    <root>
-        <level value="DEBUG"/>
-        <appender-ref ref="console"/>
-    </root>
+    <appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+        </layout>
+    </appender>
 
+    <category name="org.apache.log4j.xml">
+        <priority value="debug"/>
+        <appender-ref ref="A1"/>
+    </category>
+
+    <root>
+        <priority value="debug"/>
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="A1"/>
+    </root>
 </log4j:configuration>
