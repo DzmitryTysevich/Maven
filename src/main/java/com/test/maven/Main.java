@@ -3,12 +3,17 @@ package com.test.maven;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.*;
+import java.io.File;
 import java.util.Arrays;
 import java.util.Properties;
 
 public class Main {
     private static final Logger LOGGER = LogManager.getLogger("com.test.maven");
+    private static String OLD_FILES;
+
+    public static String getOldFiles() {
+        return OLD_FILES;
+    }
 
     public static void main(String[] args) {
         LOGGER.trace("Start trace");
@@ -31,6 +36,7 @@ public class Main {
         LOGGER.info("Checking oldFile1...");
         String file1 = properties.getProperty("file1");
         if (oldFile1.canRead() && file1.equals(oldFile1.getAbsolutePath())) {
+            OLD_FILES = Arrays.toString(new File("src/main/resources/configs").list());
             LOGGER.info(file1 + " - " + true);
             LOGGER.info("Rename oldFile1...");
         } else {
@@ -55,5 +61,7 @@ public class Main {
         LOGGER.info(Arrays.toString(files.list()));
         LOGGER.info("Application closed.");
         LOGGER.trace("End trace");
+
+        XmlResultCreate.writeXML();
     }
 }
