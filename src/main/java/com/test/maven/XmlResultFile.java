@@ -37,7 +37,7 @@ public class XmlResultFile {
         rootElement.appendChild(executionTime);
         executionTime.setTextContent(new Date().toString());
 
-        Element files = document.createElement("OldFiles");
+        Element files = document.createElement("Files");
         rootElement.appendChild(files);
         files.setTextContent(Main.getOldFiles() + Arrays.toString(new File(Main.getConfigsPath()).list()));
 
