@@ -39,7 +39,7 @@ public class XmlResultFile {
 
         Element files = document.createElement("OldFiles");
         rootElement.appendChild(files);
-        files.setTextContent(Main.getOldFiles() + Arrays.toString(new File("src/main/resources/configs").list()));
+        files.setTextContent(Main.getOldFiles() + Arrays.toString(new File(Main.getConfigsPath()).list()));
 
         //Create TransformerFactory for print to console
         TransformerFactory transformerFactory = TransformerFactory.newInstance();

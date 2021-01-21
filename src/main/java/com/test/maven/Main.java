@@ -10,9 +10,16 @@ import java.util.Properties;
 public class Main {
     private static final Logger LOGGER = LogManager.getLogger("com.test.maven");
     private static String OLD_FILES;
+    private static final String PATH1 = "/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file1.json";
+    private static final String PATH2 = "/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file2.json";
+    private static final String CONFIGS_PATH = "/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs";
 
     public static String getOldFiles() {
         return OLD_FILES;
+    }
+
+    public static String getConfigsPath() {
+        return CONFIGS_PATH;
     }
 
     public static void main(String[] args) {
@@ -27,8 +34,8 @@ public class Main {
             LOGGER.error("Exception happen!", e);
         }
 
-        File oldFile1 = new File("/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file1.json");
-        File oldFile2 = new File("/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file2.json");
+        File oldFile1 = new File(PATH1);
+        File oldFile2 = new File(PATH2);
 
         String suffix = properties.getProperty("suffix");
         String path = properties.getProperty("path");
@@ -36,7 +43,7 @@ public class Main {
         LOGGER.info("Checking oldFile1...");
         String file1 = properties.getProperty("file1");
         if (oldFile1.canRead() && file1.equals(oldFile1.getAbsolutePath())) {
-            OLD_FILES = Arrays.toString(new File("src/main/resources/configs").list());
+            OLD_FILES = Arrays.toString(new File(CONFIGS_PATH).list());
             LOGGER.info(file1 + " - " + true);
             LOGGER.info("Rename oldFile1...");
         } else {
@@ -57,7 +64,7 @@ public class Main {
         oldFile2.renameTo(new File(path + suffix + "_file2.json"));
         LOGGER.info("oldFile2 have been renamed");
 
-        File files = new File("/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs");
+        File files = new File(CONFIGS_PATH);
         LOGGER.info(Arrays.toString(files.list()));
         LOGGER.info("Application closed.");
         LOGGER.trace("End trace");
