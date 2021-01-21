@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Maven>
 <ConfigFileName>config.xml</ConfigFileName>
-<ExecutionTime>Thu Jan 21 13:31:47 MSK 2021</ExecutionTime>
-<Files>[old_file1.json, old_file2.json][new_file1.json, new_file2.json]</Files>
+<ExecutionTime>Thu Jan 21 23:51:46 MSK 2021</ExecutionTime>
+<Files>null[new_file1.json, new_file2.json]</Files>
 </Maven>

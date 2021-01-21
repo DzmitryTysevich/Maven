@@ -1,6 +1,6 @@
 [
 {
-  "timeMillis" : 1611225107171,
+  "timeMillis" : 1611262306116,
   "thread" : "main",
   "level" : "TRACE",
   "loggerName" : "com.test.maven",
@@ -12,7 +12,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611225107696,
+  "timeMillis" : 1611262306626,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -24,7 +24,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611225107698,
+  "timeMillis" : 1611262306633,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -36,7 +36,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611225107731,
+  "timeMillis" : 1611262306653,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -48,7 +48,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611225107732,
+  "timeMillis" : 1611262306661,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -60,11 +60,11 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611225107733,
+  "timeMillis" : 1611262306663,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
-  "message" : "/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file1.json - true",
+  "message" : "/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file1.json - false",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
   "threadId" : 1,
@@ -72,19 +72,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611225107735,
-  "thread" : "main",
-  "level" : "INFO",
-  "loggerName" : "com.test.maven",
-  "message" : "Rename oldFile1...",
-  "endOfBatch" : false,
-  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
-  "threadId" : 1,
-  "threadPriority" : 5,
-  "myCustomField" : "myCustomValue"
-}
-, {
-  "timeMillis" : 1611225107736,
+  "timeMillis" : 1611262306665,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -96,7 +84,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611225107738,
+  "timeMillis" : 1611262306669,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -108,11 +96,11 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611225107740,
+  "timeMillis" : 1611262306672,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
-  "message" : "/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file2.json - true",
+  "message" : "/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file2.json - false",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
   "threadId" : 1,
@@ -120,19 +108,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611225107742,
-  "thread" : "main",
-  "level" : "INFO",
-  "loggerName" : "com.test.maven",
-  "message" : "Rename oldFile2...",
-  "endOfBatch" : false,
-  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
-  "threadId" : 1,
-  "threadPriority" : 5,
-  "myCustomField" : "myCustomValue"
-}
-, {
-  "timeMillis" : 1611225107743,
+  "timeMillis" : 1611262306676,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -144,7 +120,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611225107745,
+  "timeMillis" : 1611262306678,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -156,7 +132,19 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611225107746,
+  "timeMillis" : 1611262306865,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven",
+  "message" : "Result created to XML",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611262306868,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -168,7 +156,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611225107747,
+  "timeMillis" : 1611262306869,
   "thread" : "main",
   "level" : "TRACE",
   "loggerName" : "com.test.maven",

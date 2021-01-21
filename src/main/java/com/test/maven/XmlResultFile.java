@@ -13,10 +13,12 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.Date;
 
-public class XmlResultFile {
-    private static final String RESULT_XML = "/home/dzmitry/IdeaProjects/Maven/src/main/resources/result.xml";
+import static com.test.maven.service.FileService.SINGLETON;
 
-    public static void writeXML() {
+public class XmlResultFile {
+    private final String RESULT_XML = "/home/dzmitry/IdeaProjects/Maven/src/main/resources/result.xml";
+
+    public void writeXML() {
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 
         DocumentBuilder docBuilder = null;
@@ -41,7 +43,7 @@ public class XmlResultFile {
 
         Element files = document.createElement("Files");
         rootElement.appendChild(files);
-        files.setTextContent(Main.getOldFiles() + Arrays.toString(new File(Main.getConfigsPath()).list()));
+        files.setTextContent(SINGLETON.getOLD_FILES() + Arrays.toString(new File(Main.getConfigsPath()).list()));
 
         //Create TransformerFactory for print to console
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
