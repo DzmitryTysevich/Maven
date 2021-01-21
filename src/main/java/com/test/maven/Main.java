@@ -62,6 +62,6 @@ public class Main {
         LOGGER.info("Application closed.");
         LOGGER.trace("End trace");
 
-        XmlResultCreate.writeXML();
+        XmlResultFile.writeXML();
     }
 }
