@@ -1,6 +1,6 @@
 [
 {
-  "timeMillis" : 1611224321481,
+  "timeMillis" : 1611225107171,
   "thread" : "main",
   "level" : "TRACE",
   "loggerName" : "com.test.maven",
@@ -12,7 +12,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321771,
+  "timeMillis" : 1611225107696,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -24,7 +24,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321772,
+  "timeMillis" : 1611225107698,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -36,7 +36,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321792,
+  "timeMillis" : 1611225107731,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -48,7 +48,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321794,
+  "timeMillis" : 1611225107732,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -60,7 +60,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321797,
+  "timeMillis" : 1611225107733,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -72,7 +72,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321798,
+  "timeMillis" : 1611225107735,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -84,7 +84,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321800,
+  "timeMillis" : 1611225107736,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -96,7 +96,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321802,
+  "timeMillis" : 1611225107738,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -108,7 +108,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321803,
+  "timeMillis" : 1611225107740,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -120,7 +120,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321804,
+  "timeMillis" : 1611225107742,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -132,7 +132,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321806,
+  "timeMillis" : 1611225107743,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -144,7 +144,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321807,
+  "timeMillis" : 1611225107745,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -156,7 +156,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321808,
+  "timeMillis" : 1611225107746,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven",
@@ -168,7 +168,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611224321809,
+  "timeMillis" : 1611225107747,
   "thread" : "main",
   "level" : "TRACE",
   "loggerName" : "com.test.maven",

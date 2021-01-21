@@ -14,6 +14,8 @@ import java.util.Arrays;
 import java.util.Date;
 
 public class XmlResultFile {
+    private static final String RESULT_XML = "/home/dzmitry/IdeaProjects/Maven/src/main/resources/result.xml";
+
     public static void writeXML() {
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 
@@ -57,8 +59,10 @@ public class XmlResultFile {
 
         //Print to console
         StreamResult console = new StreamResult(System.out);
+        StreamResult resultToFile = new StreamResult(new File(RESULT_XML));
         try {
             transformer.transform(source, console);
+            transformer.transform(source,resultToFile);
         } catch (TransformerException e) {
             e.printStackTrace();
         }
