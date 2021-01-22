@@ -1,9 +1,9 @@
 [
 {
-  "timeMillis" : 1611262306116,
+  "timeMillis" : 1611315942787,
   "thread" : "main",
   "level" : "TRACE",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.FileNameHandler",
   "message" : "Start trace",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
@@ -12,10 +12,10 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611262306626,
+  "timeMillis" : 1611315943043,
   "thread" : "main",
   "level" : "INFO",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.FileNameHandler",
   "message" : "Entering application.",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
@@ -24,10 +24,10 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611262306633,
+  "timeMillis" : 1611315943046,
   "thread" : "main",
   "level" : "INFO",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.util.PropertiesUtil",
   "message" : "Properties have been gotten",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
@@ -36,10 +36,10 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611262306653,
+  "timeMillis" : 1611315943069,
   "thread" : "main",
   "level" : "INFO",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.util.PropertiesUtil",
   "message" : "File config.properties have been read",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
@@ -48,10 +48,10 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611262306661,
+  "timeMillis" : 1611315943072,
   "thread" : "main",
   "level" : "INFO",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.service.FileService",
   "message" : "Checking oldFile1...",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
@@ -60,10 +60,10 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611262306663,
+  "timeMillis" : 1611315943074,
   "thread" : "main",
   "level" : "INFO",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.service.FileService",
   "message" : "/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file1.json - false",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
@@ -72,10 +72,10 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611262306665,
+  "timeMillis" : 1611315943076,
   "thread" : "main",
   "level" : "INFO",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.service.FileService",
   "message" : "oldFile1 have been renamed",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
@@ -84,10 +84,10 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611262306669,
+  "timeMillis" : 1611315943077,
   "thread" : "main",
   "level" : "INFO",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.service.FileService",
   "message" : "Checking oldFile2...",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
@@ -96,10 +96,10 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611262306672,
+  "timeMillis" : 1611315943079,
   "thread" : "main",
   "level" : "INFO",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.service.FileService",
   "message" : "/home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file2.json - false",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
@@ -108,10 +108,10 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611262306676,
+  "timeMillis" : 1611315943080,
   "thread" : "main",
   "level" : "INFO",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.service.FileService",
   "message" : "oldFile2 have been renamed",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
@@ -120,10 +120,10 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611262306678,
+  "timeMillis" : 1611315943081,
   "thread" : "main",
   "level" : "INFO",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.FileNameHandler",
   "message" : "[new_file1.json, new_file2.json]",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
@@ -132,22 +132,10 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611262306865,
+  "timeMillis" : 1611315943083,
   "thread" : "main",
   "level" : "INFO",
-  "loggerName" : "com.test.maven",
-  "message" : "Result created to XML",
-  "endOfBatch" : false,
-  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
-  "threadId" : 1,
-  "threadPriority" : 5,
-  "myCustomField" : "myCustomValue"
-}
-, {
-  "timeMillis" : 1611262306868,
-  "thread" : "main",
-  "level" : "INFO",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.FileNameHandler",
   "message" : "Application closed.",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
@@ -156,10 +144,10 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611262306869,
+  "timeMillis" : 1611315943084,
   "thread" : "main",
   "level" : "TRACE",
-  "loggerName" : "com.test.maven",
+  "loggerName" : "com.test.maven.FileNameHandler",
   "message" : "End trace",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",

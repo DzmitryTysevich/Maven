@@ -1,5 +1,8 @@
 package com.test.maven;
 
+import com.test.maven.util.Constants;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -11,21 +14,20 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.util.Arrays;
-import java.util.Date;
 
 import static com.test.maven.service.FileService.SINGLETON;
 
 public class XmlResultFile {
-    private final String RESULT_XML = "/home/dzmitry/IdeaProjects/Maven/src/main/resources/result.xml";
+    private static final Logger LOGGER = LogManager.getLogger(XmlResultFile.class);
 
-    public void writeXML() {
+    public void writeXML(long executionTime) {
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 
         DocumentBuilder docBuilder = null;
         try {
             docBuilder = docFactory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
-            e.printStackTrace();
+            LOGGER.error("Exception happen!", e);
         }
         assert docBuilder != null;
         Document document = docBuilder.newDocument();
@@ -37,13 +39,13 @@ public class XmlResultFile {
         rootElement.appendChild(configFileName);
         configFileName.setTextContent(new File("config.xml").getName());
 
-        Element executionTime = document.createElement("ExecutionTime");
-        rootElement.appendChild(executionTime);
-        executionTime.setTextContent(new Date().toString());
+        Element time = document.createElement("ExecutionTime");
+        rootElement.appendChild(time);
+        time.setTextContent(String.valueOf(executionTime));
 
         Element files = document.createElement("Files");
         rootElement.appendChild(files);
-        files.setTextContent(SINGLETON.getOLD_FILES() + Arrays.toString(new File(Main.getConfigsPath()).list()));
+        files.setTextContent(SINGLETON.getOLD_FILES() + Arrays.toString(new File(Constants.CONFIGS_PATH).list()));
 
         //Create TransformerFactory for print to console
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
@@ -51,7 +53,7 @@ public class XmlResultFile {
         try {
             transformer = transformerFactory.newTransformer();
         } catch (TransformerConfigurationException e) {
-            e.printStackTrace();
+            LOGGER.error("Exception happen!", e);
         }
 
         //Output to console
@@ -61,12 +63,12 @@ public class XmlResultFile {
 
         //Print to console
         StreamResult console = new StreamResult(System.out);
-        StreamResult resultToFile = new StreamResult(new File(RESULT_XML));
+        StreamResult resultToFile = new StreamResult(new File(Constants.RESULT_XML));
         try {
             transformer.transform(source, console);
-            transformer.transform(source,resultToFile);
+            transformer.transform(source, resultToFile);
         } catch (TransformerException e) {
-            e.printStackTrace();
+            LOGGER.error("Exception happen!", e);
         }
     }
 }

@@ -1,14 +1,13 @@
-2021-01-21 23:51:46,116 TRACE [main] maven.Main (Main.java:27) - Start trace
-2021-01-21 23:51:46,626 INFO  [main] maven.Main (Main.java:28) - Entering application.
-2021-01-21 23:51:46,633 INFO  [main] util.PropertiesUtil (PropertiesUtil.java:15) - Properties have been gotten
-2021-01-21 23:51:46,653 INFO  [main] util.PropertiesUtil (PropertiesUtil.java:18) - File config.properties have been read
-2021-01-21 23:51:46,661 INFO  [main] service.FileService (FileService.java:44) - Checking oldFile1...
-2021-01-21 23:51:46,663 INFO  [main] service.FileService (FileService.java:51) - /home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file1.json - false
-2021-01-21 23:51:46,665 INFO  [main] service.FileService (FileService.java:28) - oldFile1 have been renamed
-2021-01-21 23:51:46,669 INFO  [main] service.FileService (FileService.java:32) - Checking oldFile2...
-2021-01-21 23:51:46,672 INFO  [main] service.FileService (FileService.java:39) - /home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file2.json - false
-2021-01-21 23:51:46,676 INFO  [main] service.FileService (FileService.java:23) - oldFile2 have been renamed
-2021-01-21 23:51:46,678 INFO  [main] maven.Main (Main.java:43) - [new_file1.json, new_file2.json]
-2021-01-21 23:51:46,865 INFO  [main] maven.Main (Main.java:47) - Result created to XML
-2021-01-21 23:51:46,868 INFO  [main] maven.Main (Main.java:48) - Application closed.
-2021-01-21 23:51:46,869 TRACE [main] maven.Main (Main.java:49) - End trace
+2021-01-22 14:45:42,787 TRACE [main] maven.FileNameHandler (FileNameHandler.java:24) - Start trace
+2021-01-22 14:45:43,043 INFO  [main] maven.FileNameHandler (FileNameHandler.java:25) - Entering application.
+2021-01-22 14:45:43,046 INFO  [main] util.PropertiesUtil (PropertiesUtil.java:18) - Properties have been gotten
+2021-01-22 14:45:43,069 INFO  [main] util.PropertiesUtil (PropertiesUtil.java:21) - File config.properties have been read
+2021-01-22 14:45:43,072 INFO  [main] service.FileService (FileService.java:46) - Checking oldFile1...
+2021-01-22 14:45:43,074 INFO  [main] service.FileService (FileService.java:53) - /home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file1.json - false
+2021-01-22 14:45:43,076 INFO  [main] service.FileService (FileService.java:30) - oldFile1 have been renamed
+2021-01-22 14:45:43,077 INFO  [main] service.FileService (FileService.java:34) - Checking oldFile2...
+2021-01-22 14:45:43,079 INFO  [main] service.FileService (FileService.java:41) - /home/dzmitry/IdeaProjects/Maven/src/main/resources/configs/old_file2.json - false
+2021-01-22 14:45:43,080 INFO  [main] service.FileService (FileService.java:25) - oldFile2 have been renamed
+2021-01-22 14:45:43,081 INFO  [main] maven.FileNameHandler (FileNameHandler.java:40) - [new_file1.json, new_file2.json]
+2021-01-22 14:45:43,083 INFO  [main] maven.FileNameHandler (FileNameHandler.java:41) - Application closed.
+2021-01-22 14:45:43,084 TRACE [main] maven.FileNameHandler (FileNameHandler.java:42) - End trace
