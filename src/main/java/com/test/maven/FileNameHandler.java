@@ -19,7 +19,7 @@ public class FileNameHandler {
         this.xmlResultFile = xmlResultFile;
     }
 
-    public void handler() {
+    public void handle() {
         long startTime = System.currentTimeMillis();
         LOGGER.trace("Start trace");
         LOGGER.info("Entering application.");
